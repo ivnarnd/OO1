@@ -25,7 +25,6 @@ public class Presupuesto {
     }
     public double calcularTotal(){
     	double total = items.stream().mapToDouble(item -> item.costo()).sum();
-    	System.out.println(total);
     	return total;
     }
 }
